@@ -1,0 +1,10 @@
+.photo{
+    background-image: url("/assets/ground.jpg");
+    background-position: center;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flotte{
+    line-height: 90px;
+}

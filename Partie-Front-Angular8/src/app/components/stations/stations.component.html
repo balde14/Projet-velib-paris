@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Liste des stations</a>
+  
+
+    <div class="form-inline my-2 my-lg-0">     
+    <input  (keyup)="searchStation()" [(ngModel)]="searchText" class="form-control mr-sm-2" type="text" placeholder="Search Station" >
+</div>
+  </nav>
+<!--/////////////////////////////////////////////////////////                                   -->
+<!-- <div >
+    
+    <h3>Liste des stations</h3>
+    <input  (keyup)="searchStation()" [(ngModel)]="searchText" 
+    class="form-control" type="text" placeholder="Search Station">
+
+</div> -->
+<a href="/stations" class="btn">
+  <img src="/assets/haut.png"> 
+</a>
+<table id="dtBasicExample" class="table" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th>Nom de la station</th>
+      <th>Places Disponibles</th> 
+      <th>Velo Electrique </th>
+      <th>Velo Mecanique</th>
+     
+  </thead>
+  <tbody>
+    <tr *ngFor="let station of resultStations ;let i = index" >
+      <td> {{i+1}} - {{station.nom_station}}</td>
+      <td>{{station.borne_disponible}}</td> 
+      <td> {{station.velo_electrique}}</td>
+      <td>{{station.velo_mecanique}}</td>
+     
+    </tr> 
+  </tbody>
+</table>

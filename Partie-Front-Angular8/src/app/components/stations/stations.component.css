@@ -1,0 +1,23 @@
+agm-map {
+    height: 300px;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  .btn{
+    height: 50px;
+    width: 50px;
+    background: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
